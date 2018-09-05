@@ -27,20 +27,39 @@ var score = 0
         console.log(score)
         alert("CORRECT!")
 
-        $(".scoreboard").text("User 1: " + score)
+       
     })
 //Add 20 points and display correct
+$(".correctTwentyPoints").on('click', () => {
+    score+=20
+    console.log(score)
+    alert("CORRECT!")
 
+   
 
+})
+
+//Add 30 points
+$(".correctThirtyPoints").on('click', () => {
+    score+=30
+    console.log(score)
+    alert("CORRECT!")
+
+   
+
+})
+
+//Alert for INCORRECT
     $(".incorrect").on('click', () => {
         alert("INCORRECT!")
     })
     
-    
+    $(".scoreboard").text("User 1: " + score)
 
 
 
     })
+  
 
 // $(".correctTenPoints").click(function(){
 //         console.log("add 10 points")
