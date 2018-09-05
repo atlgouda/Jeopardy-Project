@@ -20,6 +20,7 @@ $(() => {
 //         console.log("50 point question")
 // })
 
+
 var score = 0
 //Add 10 points and display correct
     $(".correctTenPoints").on('click', () => {
@@ -27,6 +28,7 @@ var score = 0
         console.log(score)
         alert("CORRECT!")
 
+        newFunction(score);
        
     })
 //Add 20 points and display correct
@@ -35,7 +37,7 @@ $(".correctTwentyPoints").on('click', () => {
     console.log(score)
     alert("CORRECT!")
 
-   
+    newFunction(score);
 
 })
 
@@ -45,7 +47,7 @@ $(".correctThirtyPoints").on('click', () => {
     console.log(score)
     alert("CORRECT!")
 
-   
+    newFunction(score);
 
 })
 
@@ -54,12 +56,18 @@ $(".correctThirtyPoints").on('click', () => {
         alert("INCORRECT!")
     })
     
-    $(".scoreboard").text("User 1: " + score)
+    newFunction(score);
 
 
 
     })
   
+
+
+function newFunction(score) {
+    $(".scoreboard").text("Score: " + score);
+}
+
 
 // $(".correctTenPoints").click(function(){
 //         console.log("add 10 points")

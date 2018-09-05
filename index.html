@@ -13,25 +13,37 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
-<body>
-    <h1>JEOPARDY!</h1>
+<body class = "body">
+    <h1 class = "headerOne">OLD SCHOOL JEOPARDY!
+           
+    </h1>
+    <div class = "scoreboard">Scoreboard</div>
+    <img src = "https://ic.pics.livejournal.com/justonehug/23527538/18011/18011_original.jpg">
+    <div class = "container">
+    <!-- <div class = "categoryHeader"> -->
+        <button id = "catOneHeader">Eighties</button>
+        <button id = "catTwoHeader">Nineties</button>
+        <button id = "catThreeHeader">Lyric Potpurri</button>
+    <!-- </div> -->
 
 
-    <div class = "category">Category 1</div> 
+    <!-- <div class = "container"> -->
+    <!-- <div class = "category">Category 1</div>  -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsTenModal">
             10
           </button>
           <div class="modal fade" id="catOnePointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                            <h5>10 point question</h5>
+                            <h4>10 point question</h4>
+                            <h5>According to a 1986 song, what time do the police come to Ice-T's door?</h5>
                     <div class="modal-header">
                             
                       <h5 class="modal-title" id="exampleModalLongTitle">
                           
-                            <button class="correctTenPoints">A - Correct Answer</button><br>
-                            <button class="incorrect">B - Incorrect Answer</button><br>
-                            <button class="incorrect">C - Incorrect Answer</button>
+                            <button class="correctTenPoints">Midnight</button><br>
+                            <button class="incorrect">3 AM</button><br>
+                            <button class="incorrect">6 AM</button>
                           
 
                       </h5>
@@ -43,20 +55,21 @@
                 </div>
             </div>
 <!-- ADD BUTTON TWO INFO SIMILAR TO ONE -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsTwentyModal">
-        20
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsTenModal">
+        10
       </button>
-      <div class="modal fade" id="catOnePointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal fade" id="catTwoPointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                        <h5>20 point question</h5>
+                        <h4>10 point question</h4>
+                        <h5>According to a 1996 song, who were "2 of Amerikaz Most Wanted?"</h5>
                 <div class="modal-header">
                         
                   <h5 class="modal-title" id="exampleModalLongTitle">
                       
-                        <button class="correctTwentyPoints">A - Correct Answer</button><br>
-                        <button class="incorrect">B - Incorrect Answer</button><br>
-                        <button class="incorrect">C - Incorrect Answer</button>
+                        <button class="correctTenPoints">2pac and Snoop Dogg</button><br>
+                        <button class="incorrect">Snoop Dogg and Dr. Dre</button><br>
+                        <button class="incorrect">Dr. Dre and 2pac</button>
                       
 
                   </h5>
@@ -70,20 +83,21 @@
         <!-- <button id = "categoryOnePointsTwenty">20</button> -->
 <!-- BUTTON THREE -->
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsThirtyModal">
-        30
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsTenModal">
+        10
       </button>
-      <div class="modal fade" id="catOnePointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal fade" id="catThreePointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                        <h5>30 point question</h5>
+                        <h4>10 point question</h4>
+                        <h5>Rolling down the street<br> smoking endo <br>sipping on ______?</h5>
                 <div class="modal-header">
                         
                   <h5 class="modal-title" id="exampleModalLongTitle">
                       
-                        <button class="correctThirtyPoints">A - Correct Answer</button><br>
-                        <button class="incorrect">B - Incorrect Answer</button><br>
-                        <button class="incorrect">C - Incorrect Answer</button>
+                        <button class="incorrect">Gin</button><br>
+                        <button class="incorrect">Juice</button><br>
+                        <button class="correctTenPoints">All of the above</button>
                       
 
                   </h5>
@@ -98,19 +112,19 @@
         <!-- <button id = "categoryOnePointsForty">40</button>
         <button id = "categoryOnePointsFifty">50</button> -->
 <!-- CATEGORY 2!!!!!!! -->
-        <div class = "category">Category 2</div> 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsTenModal">
-        10
+        <!-- <div class = "category">Category 2</div>  -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsTwentyModal">
+        20
          </button>
-         <div class="modal fade" id="catTwoPointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+         <div class="modal fade" id="catOnePointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                        <h5>10 point question</h5>
+                        <h5>20 point question</h5>
                 <div class="modal-header">
                         
                   <h5 class="modal-title" id="exampleModalLongTitle">
                       
-                        <button class="correctTenPoints">A - Correct Answer</button><br>
+                        <button class="correctTwentyPoints">A - Correct Answer</button><br>
                         <button class="incorrect">B - Incorrect Answer</button><br>
                         <button class="incorrect">C - Incorrect Answer</button>
                       
@@ -151,20 +165,22 @@
     <!-- <button id = "categoryOnePointsTwenty">20</button> -->
 <!-- BUTTON THREE -->
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsThirtyModal">
-    30
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsTwentyModal">
+    20
   </button>
-  <div class="modal fade" id="catTwoPointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal fade" id="catThreePointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                    <h5>30 point question</h5>
+                    <h4>20 point question</h4>
+                        <h5>For any MC in any ____ states
+                                I gets psycho killer Norman Bates</h5>
             <div class="modal-header">
                     
               <h5 class="modal-title" id="exampleModalLongTitle">
                   
-                    <button class="correctThirtyPoints">A - Correct Answer</button><br>
-                    <button class="incorrect">B - Incorrect Answer</button><br>
-                    <button class="incorrect">C - Incorrect Answer</button>
+                    <button class="incorrect">48</button><br>
+                    <button class="incorrect">50</button><br>
+                    <button class="correctTwentyPoints">52</button>
                   
 
               </h5>
@@ -184,19 +200,19 @@
         <button id = "categoryTwoPointsFifty">50</button> -->
 
         <!-- CATEGORY 3!!!!! -->
-    <div class = "category">Category 3</div> 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsTenModal">
-            10
+    <!-- <div class = "category">Category 3</div>  -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsThirtyModal">
+            30
              </button>
-             <div class="modal fade" id="catThreePointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+             <div class="modal fade" id="catOnePointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                            <h5>10 point question</h5>
+                            <h5>30 point question</h5>
                     <div class="modal-header">
                             
                       <h5 class="modal-title" id="exampleModalLongTitle">
                           
-                            <button class="correctTenPoints">A - Correct Answer</button><br>
+                            <button class="correctThirtyPoints">A - Correct Answer</button><br>
                             <button class="incorrect">B - Incorrect Answer</button><br>
                             <button class="incorrect">C - Incorrect Answer</button>
                           
@@ -210,18 +226,18 @@
                 </div>
             </div>
     <!-- ADD BUTTON TWO INFO SIMILAR TO ONE -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsTwentyModal">
-        20
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsThirtyModal">
+        30
       </button>
-      <div class="modal fade" id="catThreePointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal fade" id="catTwoPointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                        <h5>20 point question</h5>
+                        <h5>30 point question</h5>
                 <div class="modal-header">
                         
                   <h5 class="modal-title" id="exampleModalLongTitle">
                       
-                        <button class="correctTwentyPoints">A - Correct Answer</button><br>
+                        <button class="correctThirtyPoints">A - Correct Answer</button><br>
                         <button class="incorrect">B - Incorrect Answer</button><br>
                         <button class="incorrect">C - Incorrect Answer</button>
                       
@@ -243,14 +259,15 @@
       <div class="modal fade" id="catThreePointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                        <h5>30 point question</h5>
+                        <h4>30 point question</h4>
+                        <h5>It's not where you're from, but where _______</h5>
                 <div class="modal-header">
                         
                   <h5 class="modal-title" id="exampleModalLongTitle">
                       
-                        <button class="correctThirtyPoints">A - Correct Answer</button><br>
-                        <button class="incorrect">B - Incorrect Answer</button><br>
-                        <button class="incorrect">C - Incorrect Answer</button>
+                        <button class="incorrect">you're going</button><br>
+                        <button class="correctThirtyPoints">you pay rent</button><br>
+                        <button class="incorrect">you play your part</button>
                       
     
                   </h5>
@@ -261,6 +278,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
         <!-- <button id = "categoryThreePointsTen">10</button>
@@ -283,13 +301,12 @@
 
     <!-- <div class = "question">Question:</div>
     <div class = "answer">Answer</div> -->
-    <div class = "scoreboard">Scoreboard</div>
+    <!-- <div id = "scoreboard">Scoreboard</div> -->
 
-    <script>
 
-    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+   
+    </body>
 </html>

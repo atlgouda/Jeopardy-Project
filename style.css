@@ -1,8 +1,43 @@
-h1 {
-    font-size: 300%;
+.headerOne {
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue
+
+}
+.scoreboard {
+    border: 5px solid white;
+    display: grid;
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue;
+    margin: 30px 20%;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
 }
 
-button {
-    
-    background-color: lightblue;
+.body {
+    background-color: teal;
 }
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33fr 33fr 34fr;
+    grid-template-rows: 50px 100px 100px 100px;
+}
+/* .categoryHeader {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 33fr 33fr 34fr;
+    grid-template-rows: 50px;
+    background-color: gainsboro; */
+}
+
+/* .scoreboard {
+    border: 1px solid black;
+    display: grid;
+    font-size: 200px;
+} */
