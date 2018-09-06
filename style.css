@@ -58,7 +58,7 @@ img {
     pointer-events: none;
 }
 #ghostface {
-    width: 300px;
+    width: 400px;
 }
 
 #catOneHeader, #catTwoHeader, #catThreeHeader {
@@ -66,6 +66,7 @@ img {
     text-align: center;
     padding: 10px;
     border-radius: 5px;
+    font-weight: bolder;
 
 }
 /* .categoryHeader {

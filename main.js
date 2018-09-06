@@ -76,7 +76,9 @@ $(".correctThirtyPoints").on('click', () => {
 function newScore(score) {
     $(".scoreboard").text("Score: " + score);
     if (score>=100)
-    swal("YOU WIN")
+    swal({
+        title: "YOU WIN!",
+      });
 
     }
 
