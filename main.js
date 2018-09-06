@@ -60,9 +60,9 @@ $(".correctThirtyPoints").on('click', () => {
     })
     
     //Disable button once selected
-    // $(".btn-primary").on('click', ()) => {
-    //     $(event.currentTarget).prop('disabled', true);
-    // }
+    $(".btn-primary").on('click', (e) => {
+        e.target.classList.add('disabled')
+    })
 
 
 
@@ -72,7 +72,12 @@ $(".correctThirtyPoints").on('click', () => {
 
 function newScore(score) {
     $(".scoreboard").text("Score: " + score);
-}
+    if (score>=100)
+    alert("YOU WIN")
+
+    }
+
+
 
 
 // $(".correctTenPoints").click(function(){
