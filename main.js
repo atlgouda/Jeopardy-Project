@@ -26,16 +26,19 @@ var score = 0
     $(".correctTenPoints").on('click', () => {
         score+=10
         console.log(score)
-        alert("CORRECT!")
-
-        newScore(score);
+        swal("CORRECT!")
        
+       
+        newScore(score);
+        
+    
+     
     })
 //Add 20 points and display correct
 $(".correctTwentyPoints").on('click', () => {
     score+=20
     console.log(score)
-    alert("CORRECT!")
+    swal("CORRECT!")
 
     newScore(score)
 
@@ -46,7 +49,7 @@ $(".correctTwentyPoints").on('click', () => {
 $(".correctThirtyPoints").on('click', () => {
     score+=30
     console.log(score)
-    alert("CORRECT!")
+    swal("CORRECT!")
 
     newScore(score);
 
@@ -54,7 +57,7 @@ $(".correctThirtyPoints").on('click', () => {
 
 //Alert for INCORRECT
     $(".incorrect").on('click', () => {
-        alert("INCORRECT!")
+        swal("INCORRECT!")
         newScore(score);
 
     })
@@ -73,7 +76,7 @@ $(".correctThirtyPoints").on('click', () => {
 function newScore(score) {
     $(".scoreboard").text("Score: " + score);
     if (score>=100)
-    alert("YOU WIN")
+    swal("YOU WIN")
 
     }
 

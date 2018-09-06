@@ -33,11 +33,14 @@ img {
     margin-right: auto;
     width: 15%;
     margin-bottom: 30px;
+    max-width: 150px;
+    
 }
 
 .body {
     background-image: url('https://i.imgur.com/MmAyvJ7.jpg');
     background-size: cover;
+
 }
 .container {
     display: grid;
