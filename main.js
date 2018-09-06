@@ -28,7 +28,7 @@ var score = 0
         console.log(score)
         alert("CORRECT!")
 
-        newFunction(score);
+        newScore(score);
        
     })
 //Add 20 points and display correct
@@ -37,7 +37,8 @@ $(".correctTwentyPoints").on('click', () => {
     console.log(score)
     alert("CORRECT!")
 
-    newFunction(score);
+    newScore(score)
+
 
 })
 
@@ -47,16 +48,21 @@ $(".correctThirtyPoints").on('click', () => {
     console.log(score)
     alert("CORRECT!")
 
-    newFunction(score);
+    newScore(score);
 
 })
 
 //Alert for INCORRECT
     $(".incorrect").on('click', () => {
         alert("INCORRECT!")
+        newScore(score);
+
     })
     
-    newFunction(score);
+    //Disable button once selected
+    // $(".btn-primary").on('click', ()) => {
+    //     $(event.currentTarget).prop('disabled', true);
+    // }
 
 
 
@@ -64,7 +70,7 @@ $(".correctThirtyPoints").on('click', () => {
   
 
 
-function newFunction(score) {
+function newScore(score) {
     $(".scoreboard").text("Score: " + score);
 }
 

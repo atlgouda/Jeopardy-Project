@@ -1,32 +1,50 @@
+
+
 .headerOne {
-    font-size: 50px;
+    margin-top: 30px;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 65px;
     text-align: center;
-    color: aliceblue
+    color: aliceblue;
+    background-color: #E70000;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 25px;
 
 }
 .scoreboard {
+    font-family: 'Gloria Hallelujah', cursive;
     border: 5px solid white;
     display: grid;
     font-size: 50px;
     text-align: center;
     color: aliceblue;
     margin: 30px 20%;
+    background-color: blue;
+    border-radius: 25px;
 }
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 15%;
+    margin-bottom: 30px;
 }
 
 .body {
-    background-color: teal;
+    background-image: url('https://i.imgur.com/MmAyvJ7.jpg');
+    background-size: cover;
 }
 .container {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 33fr 33fr 34fr;
     grid-template-rows: 50px 100px 100px 100px;
+}
+
+.modal-question{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /* .categoryHeader {
     display: grid;
