@@ -11,6 +11,7 @@ Some of my favorite viral clips from Jeopardy are when Alex Trebek reads the clu
 Once users come to the site the game board will load.  The player then can choose from 9 different questions over 3 categories.  The player will select a square, and then a multiple choice question will display.  As they answer questions correctly, the corresponding point total will be added to their scoreboard.  The game ends when either the player reaches 100 points, or there are no more tiles to select.  
 
 ## Link to Game
+[Old School Jeopardy!](https://sad-jepsen-cdbcfb.netlify.com/)
 
 ## Link to Trello Board
 [Gouda's Trello](https://trello.com/b/Spio3jFg/wdi-project-1-gouda)
