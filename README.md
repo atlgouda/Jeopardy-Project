@@ -4,7 +4,7 @@
 ## Inspiration:
 Some of my favorite viral clips from Jeopardy are when Alex Trebek reads the clues from a rap category.  I used this as an inspiration to make my Old School Rap game.  Click on the link below for an example!
 
-(https://www.youtube.com/watch?v=EDOKzrO8cA4 "Alex Trebek Rapping")
+[Alex Trebek Rapping](https://www.youtube.com/watch?v=EDOKzrO8cA4)
 
 ## Overview:
 
@@ -13,7 +13,7 @@ Once users come to the site the game board will load.  The player then can choos
 ## Link to Game
 
 ## Link to Trello Board
-(https://trello.com/b/Spio3jFg/wdi-project-1-gouda "Trello")
+[Gouda's Trello](https://trello.com/b/Spio3jFg/wdi-project-1-gouda)
 
 ## Wireframe Photo
 <img src = "https://i.imgur.com/6YhKrfG.jpg">
