@@ -1,322 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Gouda's Jeopardy!</title>
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src='./main.js'></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+        crossorigin="anonymous"></script>
+    <script src='./main.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
-
-<body class = "body">
-    <h1 class = "headerOne">OLD SCHOOL JEOPARDY!
-           
-    </h1>
-   <img src = "https://cdn.dribbble.com/users/1394943/screenshots/3012572/attachments/649451/boombox.png">
-    <div class = "scoreboard">Scoreboard</div>
-    <!-- <img src = "https://cdn.dribbble.com/users/1394943/screenshots/3012572/attachments/649451/boombox.png"> -->
-    <div class = "container">
-    <!-- <div class = "categoryHeader"> -->
-        <span id = "catOneHeader">Eighties</span>
-        <span id = "catTwoHeader">Nineties</span>
-        <span id = "catThreeHeader">Lyric Potpurri</span>
-    <!-- </div> -->
-
-
-    <!-- <div class = "container"> -->
-    <!-- <div class = "category">Category 1</div>  -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsTenModal">
-            10
-          </button>
-          <div class="modal fade" id="catOnePointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                            <h4 class = "modal-question">10 point question</h4>
-                            <h5 class = "modal-question">According to a 1986 song, what time do the police come to Ice-T's door?</h5>
+<body class="body">
+    <h1 class="headerOne">OLD SCHOOL JEOPARDY!</h1>
+    <!-- <img id="headerJeopardy" src="https://fontmeme.com/permalink/180906/851c923dff0278ae37b18f1872a0624e.png"> -->
+    <img id="boombox" src="https://cdn.dribbble.com/users/1394943/screenshots/3012572/attachments/649451/boombox.png">
+    <div class="scoreboard">Scoreboard</div>
+    <div class="container">
+        <span id="catOneHeader">Eighties</span>
+        <span id="catTwoHeader">Nineties</span>
+        <span id="catThreeHeader">Lyric Potpurri</span>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsTenModal">10</button>
+        <div class="modal fade" id="catOnePointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <h4 class="modal-question">10 point question</h4>
+                    <h5 class="modal-question">According to a 1986 song, what time do the police come to Ice-T's door?</h5>
                     <div class="modal-header">
-                            
-                      <h5 class="modal-title" id="exampleModalLongTitle">
-                          
+                        <h5 class="modal-title" id="exampleModalLongTitle">
                             <button class="incorrect" data-dismiss="modal">Midnight</button><br>
                             <button class="incorrect" data-dismiss="modal">3 AM</button><br>
                             <button class="correctTenPoints" data-dismiss="modal">6 AM</button>
-                          
-
-                      </h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                 </div>
             </div>
-<!-- ADD BUTTON TWO INFO SIMILAR TO ONE -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsTenModal">
-        10
-      </button>
-      <div class="modal fade" id="catTwoPointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        </div>
+        <!-- ADD BUTTON TWO INFO SIMILAR TO ONE -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsTenModal">
+            10
+        </button>
+        <div class="modal fade" id="catTwoPointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                        <h4 class = "modal-question"></h4class>>10 point question</h4>
-                        <h5 class = "modal-question">According to a 1996 song, who were "2 of Amerikaz Most Wanted?"</h5>
-                <div class="modal-header">
-                        
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                      
-                        <button class="correctTenPoints" data-dismiss="modal">2pac and Snoop Dogg</button><br>
-                        <button class="incorrect" data-dismiss="modal">Snoop Dogg and Dr. Dre</button><br>
-                        <button class="incorrect" data-dismiss="modal">Dr. Dre and 2pac</button>
-                      
-
-                  </h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                </div>
-            </div>
-        </div>
-        <!-- <button id = "categoryOnePointsTwenty">20</button> -->
-<!-- BUTTON THREE -->
-
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsTenModal">
-        10
-      </button>
-      <div class="modal fade" id="catThreePointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                        <h4 class = "modal-question">10 point question: Snoop Dogg</h4>
-                        <h5 class = "modal-question">Rolling down the street<br> smoking endo <br>sipping on ______?</h5>
-                <div class="modal-header">
-                        
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                      
-                        <button class="incorrect" data-dismiss="modal">Gin</button><br>
-                        <button class="incorrect" data-dismiss="modal">Juice</button><br>
-                        <button class="correctTenPoints" data-dismiss="modal">All of the above</button>
-                      
-
-                  </h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                </div>
-            </div>
-        </div>
-        <!-- <button id = "categoryOnePointsThirty">30</button> -->
-        <!-- <button id = "categoryOnePointsForty">40</button>
-        <button id = "categoryOnePointsFifty">50</button> -->
-<!-- CATEGORY 2!!!!!!! -->
-        <!-- <div class = "category">Category 2</div>  -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsTwentyModal">
-        20
-         </button>
-         <div class="modal fade" id="catOnePointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                        <h4 class = "modal-question">20 point question</h4>
-                        <h5 class = "modal-question">Who was not a member of Run DMC?</h5>
-                <div class="modal-header">
-                        
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                      
-                        <button class="incorrect" data-dismiss="modal">Rev Run</button><br>
-                        <button class="incorrect" data-dismiss="modal">Jam Master Jay</button><br>
-                        <button class="correctTwentyPoints" data-dismiss="modal">Mike D</button>
-                      
-
-                  </h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                </div>
-            </div>
-        </div>
-<!-- ADD BUTTON TWO INFO SIMILAR TO ONE -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsTwentyModal">
-    20
-  </button>
-  <div class="modal fade" id="catTwoPointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-
-                    <h4 class = "modal-question">20 point question</h4>
-                    <iframe width="auto" height="415" src="https://www.youtube.com/embed/VJu40C0vE3g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <h5 class = "modal-question">Who said this at the 1995 Source Awards?</h5>
-            <div class="modal-header">
-                    
-              <h5 class="modal-title" id="exampleModalLongTitle">
-                  
-                    <button class="incorrect" data-dismiss="modal">CeeLo Green</button><br>
-                    <button class="incorrect" data-dismiss="modal">Pastor Troy</button><br>
-                    <button class="correctTwentyPoints" data-dismiss="modal">Andre 3000</button>
-                  
-
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            </div>
-        </div>
-    </div>
-    <!-- <button id = "categoryOnePointsTwenty">20</button> -->
-<!-- BUTTON THREE -->
-
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsTwentyModal">
-    20
-  </button>
-  <div class="modal fade" id="catThreePointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                    <h4 class = "modal-question">20 point question: ODB</h4>
-                        <h5 class = "modal-question">For any MC in any ____ states
-                                I gets psycho killer Norman Bates</h5>
-            <div class="modal-header">
-                    
-              <h5 class="modal-title" id="exampleModalLongTitle">
-                  
-                    <button class="incorrect" data-dismiss="modal">48</button><br>
-                    <button class="incorrect" data-dismiss="modal">50</button><br>
-                    <button class="correctTwentyPoints" data-dismiss="modal">52</button>
-                  
-
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            </div>
-        </div>
-    </div>
-
- 
-        <!-- <button id = "categoryTwoPointsTen">10</button>
-        <button id = "categoryTwoPointsTwenty">20</button>
-        <button id = "categoryTwoPointsThirty">30</button> -->
-        <!-- <button id = "categoryTwoPointsForty">40</button>
-        <button id = "categoryTwoPointsFifty">50</button> -->
-
-        <!-- CATEGORY 3!!!!! -->
-    <!-- <div class = "category">Category 3</div>  -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsThirtyModal">
-            30
-             </button>
-             <div class="modal fade" id="catOnePointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                            <h4 class = "modal-question">30 point question</h4>
-                            <h5 class = "modal-question">Who makes an apperance in both the lyrics and music video for Blondie's "Rapture"?</h5>
+                    <h4 class="modal-question">10 point question</h4>
+                    <h5 class="modal-question">According to a 1996 song, who were "2 of Amerikaz Most Wanted?"</h5>
                     <div class="modal-header">
-                            
-                      <h5 class="modal-title" id="exampleModalLongTitle">
-                          
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            <button class="correctTenPoints" data-dismiss="modal">2pac and Snoop Dogg</button><br>
+                            <button class="incorrect" data-dismiss="modal">Snoop Dogg and Dr. Dre</button><br>
+                            <button class="incorrect" data-dismiss="modal">Dr. Dre and 2pac</button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BUTTON THREE -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsTenModal">10 </button>
+        <div class="modal fade" id="catThreePointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <h4 class="modal-question">10 point question: Snoop Dogg</h4>
+                    <h5 class="modal-question">Rolling down the street<br> smoking endo <br>sipping on ______?</h5>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            <button class="incorrect" data-dismiss="modal">Gin</button><br>
+                            <button class="incorrect" data-dismiss="modal">Juice</button><br>
+                            <button class="correctTenPoints" data-dismiss="modal">All of the above</button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsTwentyModal"> 20 </button>
+        <div class="modal fade" id="catOnePointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <h4 class="modal-question">20 point question</h4>
+                    <h5 class="modal-question">Who was not a member of Run DMC?</h5>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            <button class="incorrect" data-dismiss="modal">Rev Run</button><br>
+                            <button class="incorrect" data-dismiss="modal">Jam Master Jay</button><br>
+                            <button class="correctTwentyPoints" data-dismiss="modal">Mike D</button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsTwentyModal">20</button>
+        <div class="modal fade" id="catTwoPointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <h4 class="modal-question">20 point question</h4>
+                    <iframe width="auto" height="415" src="https://www.youtube.com/embed/VJu40C0vE3g?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+                        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <h5 class="modal-question">Who said this at the 1995 Source Awards?</h5>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            <button class="incorrect" data-dismiss="modal">CeeLo Green</button><br>
+                            <button class="incorrect" data-dismiss="modal">Pastor Troy</button><br>
+                            <button class="correctTwentyPoints" data-dismiss="modal">Andre 3000</button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsTwentyModal">20</button>
+        <div class="modal fade" id="catThreePointsTwentyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <h4 class="modal-question">20 point question: ODB</h4>
+                    <h5 class="modal-question">For any MC in any ____ states I gets psycho killer Norman Bates</h5>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            <button class="incorrect" data-dismiss="modal">48</button><br>
+                            <button class="incorrect" data-dismiss="modal">50</button><br>
+                            <button class="correctTwentyPoints" data-dismiss="modal">52</button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsThirtyModal">30</button>
+        <div class="modal fade" id="catOnePointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <h4 class="modal-question">30 point question</h4>
+                    <h5 class="modal-question">Who makes an apperance in both the lyrics and music video for Blondie's "Rapture"?</h5>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
                             <button class="incorrect" data-dismiss="modal">Flava Flav</button><br>
                             <button class="correctThirtyPoints" data-dismiss="modal">Fab 5 Freddy</button><br>
                             <button class="incorrect" data-dismiss="modal">Grandmaster Flash</button>
-                          
-    
-                      </h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    </div>
-                </div>
-            </div>
-    <!-- ADD BUTTON TWO INFO SIMILAR TO ONE -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsThirtyModal">
-        30
-      </button>
-      <div class="modal fade" id="catTwoPointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                        <h4 class = "modal-question">30 point question</h4>
-                        <img id = "ghostface" src = "https://i.imgur.com/E1bdItC.jpg">
-                        <h5 class = "modal-question">Which memeber of the Wu Tang Clan is pictured above?</h5>
-                <div class="modal-header">
-                        
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                      
-                        <button class="correctThirtyPoints" data-dismiss="modal">Ghostface Killah</button><br>
-                        <button class="incorrect" data-dismiss="modal">Raekwon</button><br>
-                        <button class="incorrect" data-dismiss="modal">GZA</button>
-                      
-    
-                  </h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
                 </div>
             </div>
         </div>
-        <!-- <button id = "categoryOnePointsTwenty">20</button> -->
-    <!-- BUTTON THREE -->
-    
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsThirtyModal">
-        30
-      </button>
-      <div class="modal fade" id="catThreePointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catTwoPointsThirtyModal">30</button>
+        <div class="modal fade" id="catTwoPointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                        <h4 class = "modal-question">30 point question Outkast</h4>
-                        <h5 class = "modal-question">It's not where you're from, but where _______</h5>
-                <div class="modal-header">
-                        
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                      
-                        <button class="incorrect" data-dismiss="modal">you're going</button><br>
-                        <button class="correctThirtyPoints" data-dismiss="modal">you pay rent</button><br>
-                        <button class="incorrect" data-dismiss="modal">you play your part</button>
-                      
-    
-                  </h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                    <h4 class="modal-question">30 point question</h4>
+                    <img id="ghostface" src="https://i.imgur.com/E1bdItC.jpg">
+                    <h5 class="modal-question">Which memeber of the Wu Tang Clan is pictured above?</h5>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            <button class="correctThirtyPoints" data-dismiss="modal">Ghostface Killah</button><br>
+                            <button class="incorrect" data-dismiss="modal">Raekwon</button><br>
+                            <button class="incorrect" data-dismiss="modal">GZA</button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catThreePointsThirtyModal">30</button>
+        <div class="modal fade" id="catThreePointsThirtyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <h4 class="modal-question">30 point question Outkast</h4>
+                    <h5 class="modal-question">It's not where you're from, but where _______</h5>
+                    <div class="modal-header"> 
+                        <h5 class="modal-title" id="exampleModalLongTitle">
+                            <button class="incorrect" data-dismiss="modal">you're going</button><br>
+                            <button class="correctThirtyPoints" data-dismiss="modal">you pay rent</button><br>
+                            <button class="incorrect" data-dismiss="modal">you play your part</button>
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-        <!-- <button id = "categoryThreePointsTen">10</button>
-        <button id = "categoryThreePointsTwenty">20</button>
-        <button id = "categoryThreePointsThirty">30</button> -->
-        <!-- <button id = "categoryThreePointsForty">40</button>
-        <button id = "categoryThreePointsFifty">50</button> -->
-    <!-- <div class = "category">Category 4</div> 
-        <button id = "categoryFourPointsTen">10</button>
-        <button id = "categoryFourPointsTwenty">20</button>
-        <button id = "categoryFourPointsThirty">30</button>
-        <button id = "categoryFourPointsForty">40</button>
-        <button id = "categoryFourPointsFifty">50</button>
-    <div class = "category">Category 5</div> 
-        <button id = "categoryFivePointsTen">10</button> 
-        <button id = "categoryFivePointsTwenty">20</button>
-        <button id = "categoryFivePointsThirty">30</button>
-        <button id = "categoryFivePointsForty">40</button>
-        <button id = "categoryFivePointsFifty">50</button> -->
-
-    <!-- <div class = "question">Question:</div>
-    <div class = "answer">Answer</div> -->
-    <!-- <div id = "scoreboard">Scoreboard</div> -->
-
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-   
-    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>
