@@ -15,5 +15,6 @@ Once users come to the site the game board will load.  The player then can choos
 #Link to Trello Board
 
 #Wireframe Photo
-
+<img src = "https://i.imgur.com/6YhKrfG.jpg">
+<img src = "https://i.imgur.com/XJZGDlK.jpg>
 #Technology
