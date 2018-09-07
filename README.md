@@ -23,3 +23,10 @@ Once users come to the site the game board will load.  The player then can choos
 ## Technology
 HTML, CSS, Javascript, jQuery, CSS Grid, Sweet Alert, Bootstrap, Google Fonts
 
+## Version 2 wishlist
+* Mulitple users
+* Enter username
+* Log total wins
+* Adjust (more) for screen resolution
+* Round 2
+* Music plays when user wins
