@@ -10,4 +10,10 @@ https://www.youtube.com/watch?v=EDOKzrO8cA4
 
 Once users come to the site the game board will load.  The player then can choose from 9 different questions over 3 categories.  The player will select a square, and then a multiple choice question will display.  As they answer questions correctly, the corresponding point total will be added to their scoreboard.  The game ends when either the player reaches 100 points, or there are no more tiles to select.  
 
+#Link to Game
+
+#Link to Trello Board
+
+#Wireframe Photo
+
 #Technology
