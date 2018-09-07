@@ -7,6 +7,7 @@ $(() => {
         console.log(score)
         swal({
             title: "CORRECT",
+            icon: "success",
         })
         newScore(score);
     })
@@ -16,6 +17,7 @@ $(() => {
         console.log(score)
         swal({
             title: "CORRECT",
+            icon: "success",
         })
         newScore(score)
     })
@@ -25,6 +27,7 @@ $(() => {
         console.log(score)
         swal({
             title: "CORRECT",
+            icon: "success",
         })
         newScore(score);
     })
@@ -32,6 +35,7 @@ $(() => {
     $(".incorrect").on('click', () => {
         swal({
             title: "INCORRECT",
+            icon: "error",
         })
         newScore(score);
     })
@@ -50,6 +54,7 @@ function newScore(score) {
     if (score >= 100)
         swal({
             title: "YOU WIN!",
+            icon: "success",
         });
         
 }

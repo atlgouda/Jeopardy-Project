@@ -30,3 +30,4 @@ HTML, CSS, Javascript, jQuery, CSS Grid, Sweet Alert, Bootstrap, Google Fonts
 * Adjust (more) for screen resolution
 * Round 2
 * Music plays when user wins
+* Add animations
