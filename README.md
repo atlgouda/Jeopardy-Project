@@ -13,8 +13,10 @@ Once users come to the site the game board will load.  The player then can choos
 #Link to Game
 
 #Link to Trello Board
+https://trello.com/b/Spio3jFg/wdi-project-1-gouda
 
 #Wireframe Photo
 <img src = "https://i.imgur.com/6YhKrfG.jpg">
-<img src = "https://i.imgur.com/XJZGDlK.jpg>
+<img src = "https://i.imgur.com/XJZGDlK.jpg">
+
 #Technology
