@@ -13,11 +13,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 </head>
+<style>
+#reset{
+   display: flex;
+    justify-content: center;
+    align-items: center
+}
+</style>
 <body class="body">
     <h1 class="headerOne">OLD SCHOOL JEOPARDY!</h1>
     <!-- <img id="headerJeopardy" src="https://fontmeme.com/permalink/180906/851c923dff0278ae37b18f1872a0624e.png"> -->
     <img id="boombox" src="https://cdn.dribbble.com/users/1394943/screenshots/3012572/attachments/649451/boombox.png">
     <div class="scoreboard">Scoreboard</div>
+    
     <div class="container">
         <span id="catOneHeader">Eighties</span>
         <span id="catTwoHeader">Nineties</span>
@@ -69,13 +77,13 @@
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <h4 class="modal-question">10 point question: Snoop Dogg</h4>
-                    <h5 class="modal-question">Rolling down the street<br> smoking endo <br>sipping on ______?</h5>
+                    <h4 class="modal-question">10 point question: A Tribe Called Quest</h4>
+                    <h5 class="modal-question">We've been known to do the impossible like ______?</h5>
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">
-                            <button class="incorrect" data-dismiss="modal">Gin</button><br>
-                            <button class="incorrect" data-dismiss="modal">Juice</button><br>
-                            <button class="correctTenPoints" data-dismiss="modal">All of the above</button>
+                            <button class="incorrect" data-dismiss="modal">Peter Tosh</button><br>
+                            <button class="incorrect" data-dismiss="modal">Bo Jackson</button><br>
+                            <button class="correctTenPoints" data-dismiss="modal">Broadway Joe</button>
                         </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -208,7 +216,9 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div></div>
+        <button id="reset">RESET</button>
+        </div>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

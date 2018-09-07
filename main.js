@@ -39,6 +39,9 @@ $(() => {
     $(".btn-primary").on('click', (e) => {
         e.target.classList.add('disabled')
     })
+    $('.reset').click(function() {
+        location.reload();
+    });
 })
 function newScore(score) {
     $(".scoreboard").text("Score: " + score);
@@ -46,4 +49,5 @@ function newScore(score) {
         swal({
             title: "YOU WIN!",
         });
+        
 }
