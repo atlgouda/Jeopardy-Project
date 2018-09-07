@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Gouda's Jeopardy!</title>
+    <title>Old School Jeopardy!</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src='./main.js'></script>
@@ -14,23 +14,29 @@
         crossorigin="anonymous">
 </head>
 <style>
+    /* override */
 #reset{
    display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    height: 40px;
+    background: gold;
+    border-radius: 30px;
 }
 </style>
 <body class="body">
     <h1 class="headerOne">OLD SCHOOL JEOPARDY!</h1>
-    <!-- <img id="headerJeopardy" src="https://fontmeme.com/permalink/180906/851c923dff0278ae37b18f1872a0624e.png"> -->
     <img id="boombox" src="https://cdn.dribbble.com/users/1394943/screenshots/3012572/attachments/649451/boombox.png">
     <div class="scoreboard">Scoreboard</div>
     
     <div class="container">
+        <!-- Category Headers -->
         <span id="catOneHeader">Eighties</span>
         <span id="catTwoHeader">Nineties</span>
         <span id="catThreeHeader">Lyric Potpurri</span>
+        <!-- Question Buttons -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#catOnePointsTenModal">10</button>
+        <!-- MODAL INFO -->
         <div class="modal fade" id="catOnePointsTenModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -38,6 +44,7 @@
                     <h5 class="modal-question">According to a 1986 song, what time do the police come to Ice-T's door?</h5>
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLongTitle">
+        <!-- ANSWER BUTTONS -->
                             <button class="incorrect" data-dismiss="modal">Midnight</button><br>
                             <button class="incorrect" data-dismiss="modal">3 AM</button><br>
                             <button class="correctTenPoints" data-dismiss="modal">6 AM</button>
@@ -216,6 +223,7 @@
                 </div>
             </div>
         </div>
+        <!-- RESET BUTTON -->
         <div></div>
         <button id="reset">RESET</button>
         </div>

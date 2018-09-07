@@ -39,10 +39,12 @@ $(() => {
     $(".btn-primary").on('click', (e) => {
         e.target.classList.add('disabled')
     })
-    $('.reset').click(function() {
+    // RESET BUTTON
+    $('#reset').click(function() {
         location.reload();
     });
 })
+// WIN GAME
 function newScore(score) {
     $(".scoreboard").text("Score: " + score);
     if (score >= 100)
